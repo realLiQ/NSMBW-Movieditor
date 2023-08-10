@@ -9,7 +9,7 @@ import os
 # Thanks to L-Dev for doing the logo
 # Thanks to the Reggie (Next) staff for the U8 Archive API
 
-version = "1.0"
+version = "1.1"
 
 aboutMsg = "NSMBW Movieditor v" + version + "\nCoded by LiQ - MIT License"
 warningMsg = "This file includes both moviedata and moviesound Commands.\nMake sure to fix your file!"
@@ -39,6 +39,126 @@ effects = [
     "Wm_dm_downlandsmoke02"
 ]
 
+sfx = [
+    "OP_DUMMY_U",
+    "OP_JUMP_JR_0954f",
+    "OP_LAND_JR_0983f",
+    "OP_JUMP_SUB_1038f",
+    "OP_LAND_SUB_1071f",
+    "OP_CAKE_LIFT_1142f",
+    "OP_CAKE_THROW_1166f",
+    "OP_CAKE_CLASH_1210f",
+    "OP_SHIP_PROPELLER_1511f",
+    "OP_CAKE_THROW_1522f",
+    "OP_CAKE_ON_SHIP_1562f",
+    "OP_PRESENT_LIFT_2188f",
+    "OP_PRESENT_THROW_2308f",
+    "OP_PRESENT_INTO_TAIHOU_2340f",
+    "OP_PRESENT_LIFT_2369f",
+    "OP_PRESENT_THROW_2400f",
+    "OP_PRESENT_INTO_TAIHOU_2427f",
+    "OP_PRESENT_FIRE_2660f",
+    "OP_SHIP_PROPELLER_3032f",
+    "OP_FOOTNOTE_SUB_1227f",
+    "OP_FOOTNOTE_MARIO_1397f",
+    "OP_MARIO_JUMP_1743f",
+    "OP_FOOTNOTE_KINO_2031f",
+    "OP_FOOTNOTE_KINO_2454f",
+    "OP_FOOTNOTE_MARIO_3083f",
+    "OP_FIREWORKS",
+    "OP_V_ALL_GAYA",
+    "OP_CAKE_APP",
+    "OP_V_MA_NOTICE_CAKE1",
+    "OP_V_MA_NOTICE_CAKE2",
+    "OP_PCH_WALK_TO_CAKE",
+    "OP_V_JR_APP_FROM_CAKE",
+    "OP_V_PCH_SURPRISED_JR",
+    "OP_V_ALL_NOTICE_JR",
+    "OP_V_KO_NOTICE_JR",
+    "OP_V_LAR_APP_FROM_CAKE",
+    "OP_V_ROY_APP_FROM_CAKE",
+    "OP_V_LEM_APP_FROM_CAKE",
+    "OP_V_WEN_APP_FROM_CAKE",
+    "OP_V_IGG_APP_FROM_CAKE",
+    "OP_V_MOR_APP_FROM_CAKE",
+    "OP_V_LUD_APP_FROM_CAKE",
+    "OP_V_ALL_SURPRISED_RINGS",
+    "OP_V_KO_SURPRISED_RINGS",
+    "OP_V_LAR_THROW_CAKE",
+    "OP_V_ROY_THROW_CAKE",
+    "OP_V_LEM_THROW_CAKE",
+    "OP_V_WEN_THROW_CAKE",
+    "OP_V_IGG_THROW_CAKE",
+    "OP_V_MOR_THROW_CAKE",
+    "OP_V_LUD_THROW_CAKE",
+    "OP_V_PCH_INTO_CAKE",
+    "OP_V_MA_DOWN",
+    "OP_V_LU_DOWN",
+    "OP_V_JR_SNATCH_PCH",
+    "OP_V_KO2_ROLL",
+    "OP_V_KO_ROLL",
+    "OP_V_ALL_WAKEUP",
+    "OP_V_MA_CHASE",
+    "OP_V_PCH_HELP_FROM_SHIP",
+    "OP_V_JR_LAUGH_AT_SHIP",
+    "OP_V_MA_JUMP",
+    "OP_V_LU_JUMP",
+    "OP_V_KO2_JUMP",
+    "OP_V_KO_JUMP",
+    "OP_V_MA_WAIT",
+    "OP_V_NPC_KO_CALL_CANNON",
+    "OP_CANNON_COME_IN",
+    "OP_V_NPC_KO_HOLD_BOX1",
+    "OP_V_NPC_KO_THROW_BOX1",
+    "OP_V_NPC_KO_HOLD_BOX2",
+    "OP_V_NPC_KO_THROW_BOX2",
+    "OP_CANNON_GO_AWAY",
+    "OP_PRESENT_BOX_BURST",
+    "OP_ITEM_GLIDE",
+    "OP_PRPL_BOUND",
+    "OP_PNGN_BOUND",
+    "ED_DUMMY_U",
+    "EX_DUMMY_U",
+    "ED_FOOTNOTE_0000f",
+    "ED_FOOTNOTE_0661f",
+    "ED_FOOTNOTE_1608f",
+    "ED_FOOTNOTE_1921f",
+    "ED_FOOTNOTE_2374f",
+    "ED_FOOTNOTE_2722f",
+    "EX_FOOTNOTE_0011f",
+    "EX_FOOTNOTE_0436f",
+    "ED_V_LU_CALL_FAR",
+    "ED_V_MA_HEAR_LUIGI",
+    "ED_V_ALL_SURPRISE_BALLOON",
+    "ED_V_ALL_WAVE_BALLOON",
+    "ED_BALLOON_LAND",
+    "ED_V_LU_GOOD_TEMPER",
+    "ED_BALLOON_DOOR_CLOSE",
+    "ED_V_LU_DOWN",
+    "ED_V_LU_BUMMER",
+    "ED_V_KO_CALL_LUIGI",
+    "ED_V_LU_FEEL_GLAD",
+    "ED_V_PCH_TALK_TO_MARIO",
+    "ED_V_MA_TALKED_BY_PCH",
+    "ED_V_PCH_SMILE_TO_MARIO",
+    "ED_V_MA_NOD",
+    "ED_V_MA_BLUSH",
+    "EX_WIND",
+    "EX_V_LAR_FATAL",
+    "EX_V_LAR_FATAL_DOWN",
+    "EX_V_LAR_NOTICE_JR",
+    "EX_V_JR_ORDER_S",
+    "EX_V_JR_ORDER_L",
+    "EX_V_ALL_PUSH_KP",
+    "EX_KP_TURN_OVER",
+    "EX_KP_LAND",
+    "EX_V_ALL_SATISFIED",
+    "EX_CASTLE_FALLS_OVER",
+    "EX_V_KP_NOTICE_PINCH",
+    "EX_CASTLE_CRASH",
+    "EX_V_KP_GROAN"
+]
+
 
 def assembleListString(type, correspondingData=0, correspondingData2=0, correspondingData3=0):
     """
@@ -51,7 +171,10 @@ def assembleListString(type, correspondingData=0, correspondingData2=0, correspo
         case 1:
             final = "Move Camera to (%d, %d, %d)" % (correspondingData, correspondingData2, correspondingData3)
         case 2:
-            final = "Play Sound %d" % correspondingData
+            try:
+                final = "Play Sound \"%s\"" % sfx[correspondingData]
+            except:
+                final = "Play Sound %d" % correspondingData
         case 3:
             final = "Spawn Effect \"%s\"" % effects[correspondingData]
         case 4:
@@ -100,7 +223,7 @@ def getLast4CharsOfStr(string):
     """
     return operator.getitem(string, slice(len(string) - 4, len(string)))
 
-2
+
 class AddRemButtons(QtWidgets.QWidget):
     def __init__(self, otherWidget):
         super().__init__()
@@ -125,6 +248,10 @@ class AddRemButtons(QtWidgets.QWidget):
 
 
 class CommandStruct(QtWidgets.QListWidgetItem):
+    """
+    Structure for a command entry
+    """
+
     def __init__(self):
         QtWidgets.QListWidgetItem.__init__(self)
 
@@ -211,7 +338,11 @@ class Widgets(QtWidgets.QWidget):
         """
         newCmd = CommandStruct()
         newCmd.setText("Switch to Scene 0")
-        self.listField.addItem(newCmd)
+        try:
+            selected = self.listField.selectedIndexes()[0]
+            self.listField.insertItem(selected.row() + 1, newCmd)
+        except:
+            self.listField.addItem(newCmd)
 
     def removeCmd(self):
         """
@@ -440,7 +571,8 @@ class MainForm(QtWidgets.QMainWindow):
         """
         Save the file, but not in the same place
         """
-        fresult = QtWidgets.QFileDialog.getSaveFileName(self, "Save Moviedata", "", "Moviedata Archive (*.arc)")
+        fresult = QtWidgets.QFileDialog.getSaveFileName(self, "Save Moviedata", "",
+                                                        "Moviedata Archive (*.arc);;Moviedata Binary (*.bin)")
 
         if fresult[0] == "":
             return
@@ -455,14 +587,7 @@ class MainForm(QtWidgets.QMainWindow):
         """
         Save the file
         """
-        newArchive = archive.U8()
 
-        newArchive[self.folderName] = None
-
-        for i in range(len(self.binNames)):
-            newArchive[self.binNames[i]] = self.bins[i]
-
-        finalDatas = struct.pack('>i', 0)
         data = None
         for i in range(self.widget.listField.count()):
             cmd = self.widget.listField.item(i)
@@ -508,19 +633,31 @@ class MainForm(QtWidgets.QMainWindow):
                 data += struct.pack('>iiiiiiiii', cmdData[0], cmdData[1], cmdData[2], cmdData[3], cmdData[4],
                                     cmdData[5],
                                     cmdData[6], cmdData[7], cmdData[8])
-            finalDatas += data
 
-        while len(finalDatas) < 18004:
-            finalDatas += struct.pack('>i', 0)
+        while len(data) < 18000:
             data += struct.pack('>i', 0)
 
-        newArchive[self.targetBinName] = data
+        if getLast4CharsOfStr(self.path) == ".arc":
+            newArchive = archive.U8()
 
-        finalArc = newArchive._dump()
+            newArchive[self.folderName] = None
 
-        f = open(self.path, 'wb')
-        f.write(finalArc)
-        f.close()
+            for i in range(len(self.binNames)):
+                newArchive[self.binNames[i]] = self.bins[i]
+
+            newArchive[self.targetBinName] = data
+
+            finalArc = newArchive._dump()
+
+            f = open(self.path, 'wb')
+            f.write(finalArc)
+            f.close()
+        elif getLast4CharsOfStr(self.path) == ".bin":
+            f = open(self.path, 'wb')
+            f.write(data)
+            f.close()
+        else:
+            return
 
         checkFileFunctionality(self.widget.listField)
 
@@ -529,7 +666,8 @@ class MainForm(QtWidgets.QMainWindow):
         Open the file
         """
         # open file dialog to get path
-        result = QtWidgets.QFileDialog.getOpenFileName(self, "Open Moviedata...", "", "Moviedata Archive (*.arc)")
+        result = QtWidgets.QFileDialog.getOpenFileName(self, "Open Moviedata...", "",
+                                                       "Moviedata Archive (*.arc);;Moviedata Binary (*.bin)")
 
         # check if dialog was cancelled
         if result[0] == "":
@@ -542,28 +680,46 @@ class MainForm(QtWidgets.QMainWindow):
         path = result[0]
         self.path = result[0]
 
-        # Load file
-        f = open(path, 'rb')
-        dat = f.read()
-        f.close()
-        arc = archive.U8().load(dat)
+        if getLast4CharsOfStr(self.path) == ".arc":
+            # Load file
+            f = open(path, 'rb')
+            dat = f.read()
+            f.close()
+            arc = archive.U8().load(dat)
 
-        fileIndex, noNeed = QtWidgets.QInputDialog.getText(self, "BIN Name", "Enter the name of the wanted binary.")
-        if getLast4CharsOfStr(fileIndex) != ".bin":
-            fileIndex += ".bin"
-        data = None
-        for key, value in arc.files:
-            if value is None:
-                self.folderName = key
-            elif key.endswith(fileIndex):
-                data = arc[key]
-                self.targetBinName = key
-            else:
-                self.bins.append(arc[key])
-                self.binNames.append(key)
+            binList = []
+            for key, value in arc.files:
+                if value is not None:
+                    binList.append(key)
 
-        if data is None:
-            throwBinError(fileIndex)
+            fileIndex, ok = QtWidgets.QInputDialog.getItem(self, "Binary", "Choose the binary you want to edit.",
+                                                           binList, 0, False)
+            if not ok:
+                return
+
+            if getLast4CharsOfStr(fileIndex) != ".bin":
+                fileIndex += ".bin"
+
+            data = None
+            for key, value in arc.files:
+                if value is None:
+                    self.folderName = key
+                elif key.endswith(fileIndex):
+                    data = arc[key]
+                    self.targetBinName = key
+                else:
+                    self.bins.append(arc[key])
+                    self.binNames.append(key)
+
+            if data is None:
+                throwBinError(fileIndex)
+                return
+        elif getLast4CharsOfStr(self.path) == ".bin":
+            f = open(path, 'rb')
+            data = f.read()
+            f.close()
+
+        else:
             return
 
         value = []
