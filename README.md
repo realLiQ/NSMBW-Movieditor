@@ -24,5 +24,10 @@ The binary filenames can be obtained by opening the ARCs in BrawlCrate.
 - Reggie staff, for the U8 Archive API
 
 ## Changelog
+### v1.1
+- Support .bin file opening and saving
+- Add item underneath the selected one
+- Improved ARC opening BIN select window
+
 ### v1.0
 First release
